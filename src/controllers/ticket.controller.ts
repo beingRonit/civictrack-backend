@@ -1,3 +1,7 @@
+import { Request, Response } from "express"
+import { prisma } from "../services/prisma"
+import { broadcast } from "../services/sseClients"
+
 export const updateTicketPriority = async (req: Request, res: Response) => {
   try {
     const { priority } = req.body
@@ -17,9 +21,6 @@ export const updateTicketPriority = async (req: Request, res: Response) => {
     res.status(500).json({ message: "Server error" })
   }
 }
-import { Request, Response } from "express"
-import { prisma } from "../services/prisma"
-import { broadcast } from "../services/sseClients"
 
 export const createTicket = async (req: Request, res: Response) => {
   try {

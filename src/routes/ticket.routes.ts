@@ -5,11 +5,9 @@ import {
   getTickets,
   getTicketById,
   updateTicketStatus,
-  updateTicketApproval
+  updateTicketApproval,
+  updateTicketPriority
 } from "../controllers/ticket.controller"
-  import {
-    updateTicketPriority
-  } from "../controllers/ticket.controller"
 
 const router = Router()
 
