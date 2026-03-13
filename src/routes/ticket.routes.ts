@@ -7,6 +7,9 @@ import {
   updateTicketStatus,
   updateTicketApproval
 } from "../controllers/ticket.controller"
+  import {
+    updateTicketPriority
+  } from "../controllers/ticket.controller"
 
 const router = Router()
 
@@ -15,5 +18,6 @@ router.get("/", verifyToken, getTickets)
 router.get("/:id", verifyToken, getTicketById)
 router.patch("/:id/status", verifyToken, isAdmin, updateTicketStatus)
 router.patch("/:id/approval", verifyToken, isAdmin, updateTicketApproval)
+router.patch("/:id/priority", verifyToken, isAdmin, updateTicketPriority)
 
 export default router
