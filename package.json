@@ -4,7 +4,7 @@
   "description": "Civic issue reporting platform - backend",
   "main": "dist/server.js",
   "scripts": {
-    "build": "tsc",
+    "build": "npx tsc",
     "start": "node dist/server.js",
     "dev": "tsx src/server.ts"
   },
