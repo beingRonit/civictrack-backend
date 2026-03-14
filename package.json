@@ -34,4 +34,5 @@
     "@types/pg": "^8.18.0",
     "ts-node": "^10.9.2"
   }
+    ,"postinstall": "chmod +x node_modules/.bin/tsx"
 }
