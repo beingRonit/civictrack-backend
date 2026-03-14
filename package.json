@@ -8,7 +8,7 @@
     "start": "./node_modules/.bin/tsx src/server.ts",
     "dev": "./node_modules/.bin/tsx src/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
-      ,"build": "tsc"
+      ,"build": "npx tsc"
   },
   "keywords": [],
   "author": "",
