@@ -5,7 +5,7 @@
   "main": "src/server.ts",
   "scripts": {
     "build": "echo 'no build'",
-    "start": "tsx src/server.ts",
+    "start": "node node_modules/.bin/tsx src/server.ts",
     "dev": "tsx src/server.ts"
   },
   "keywords": [],
