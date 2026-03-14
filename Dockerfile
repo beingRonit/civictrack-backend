@@ -9,7 +9,7 @@ RUN npm ci
 
 COPY . .
 
-RUN ./node_modules/.bin/tsc --skipLibCheck
+RUN chmod +x ./node_modules/.bin/tsc && ./node_modules/.bin/tsc --skipLibCheck
 
 EXPOSE 3000
 
