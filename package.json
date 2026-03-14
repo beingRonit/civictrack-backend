@@ -5,8 +5,8 @@
   "main": "src/server.ts",
   "type": "commonjs",
   "scripts": {
-    "start": "tsx src/server.ts",
-    "dev": "tsx src/server.ts"
+    "start": "node ./node_modules/tsx/src/cli.js src/server.ts",
+    "dev": "node ./node_modules/tsx/src/cli.js src/server.ts"
   },
   "keywords": [],
   "author": "",
