@@ -2,10 +2,10 @@
   "name": "civictrack-backend",
   "version": "1.0.0",
   "description": "Civic issue reporting platform - backend",
-  "main": "src/server.ts",
+  "main": "dist/server.js",
   "scripts": {
-    "build": "echo 'no build'",
-    "start": "node node_modules/.bin/tsx src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
     "dev": "tsx src/server.ts"
   },
   "keywords": [],
