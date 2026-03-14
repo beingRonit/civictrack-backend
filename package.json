@@ -8,6 +8,7 @@
     "start": "./node_modules/.bin/tsx src/server.ts",
     "dev": "./node_modules/.bin/tsx src/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
+      ,"build": "tsc"
   },
   "keywords": [],
   "author": "",
@@ -28,7 +29,6 @@
     "react-hook-form": "^7.71.2",
     "recharts": "^3.8.0",
     "tsx": "^4.21.0",
-    "typescript": "^5.9.3",
     "zod": "^4.3.6"
   },
   "devDependencies": {
@@ -38,6 +38,7 @@
     "@types/jsonwebtoken": "^9.0.10",
     "@types/node": "^25.4.0",
     "@types/pg": "^8.18.0",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
   }
 }
