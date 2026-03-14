@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const auth_middleware_1 = require("../middleware/auth.middleware");
+const ticket_controller_1 = require("../controllers/ticket.controller");
+const router = (0, express_1.Router)();
+router.post("/", auth_middleware_1.verifyToken, ticket_controller_1.createTicket);
+router.get("/", auth_middleware_1.verifyToken, ticket_controller_1.getTickets);
+router.get("/:id", auth_middleware_1.verifyToken, ticket_controller_1.getTicketById);
+router.patch("/:id/status", auth_middleware_1.verifyToken, auth_middleware_1.isAdmin, ticket_controller_1.updateTicketStatus);
+router.patch("/:id/approval", auth_middleware_1.verifyToken, auth_middleware_1.isAdmin, ticket_controller_1.updateTicketApproval);
+router.patch("/:id/priority", auth_middleware_1.verifyToken, auth_middleware_1.isAdmin, ticket_controller_1.updateTicketPriority);
+exports.default = router;
