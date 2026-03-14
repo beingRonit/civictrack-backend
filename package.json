@@ -2,12 +2,11 @@
   "name": "real-shit",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/server.js",
+  "main": "src/server.ts",
   "type": "commonjs",
   "scripts": {
-    "build": "npx tsc",
-    "start": "node dist/server.js",
-    "dev": "npx tsx src/server.ts",
+    "start": "./node_modules/.bin/tsx src/server.ts",
+    "dev": "./node_modules/.bin/tsx src/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
